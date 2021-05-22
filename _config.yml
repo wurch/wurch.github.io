@@ -28,7 +28,7 @@ twitter_username: jekyllrb
 github_username:  Wurch
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
