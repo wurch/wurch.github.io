@@ -15,9 +15,9 @@ Traefik is an open-source Edge Router and was built mainly to work with containe
 
 Our goal is to delegate to Traefik the task of receiving requests and route them to the appropriate service. 
 
-![Using%20Traefik%20with%20docker%20swarm%20as%20reverse-proxy%20f%20f51e667ed9e14085a73f2e63334b76c0/Untitled.png](Using%20Traefik%20with%20docker%20swarm%20as%20reverse-proxy%20f%20f51e667ed9e14085a73f2e63334b76c0/Untitled.png)
+![traefik-architecture](https://doc.traefik.io/traefik/assets/img/traefik-architecture.png)
 
-Traefik workflow - source: [https://doc.traefik.io/traefik/](https://doc.traefik.io/traefik/)
+Traefik architecture - source: [https://doc.traefik.io/traefik/](https://doc.traefik.io/traefik/)
 
 In the above image Traefik acts as the middle man between the internet and our infrastructure, one thing to notice is the following, all addresses listed above are the same, in our case we want to route different domains to different services. In order to achieve this we will use Docker Swarm as our container orchestration tool, it will create an inner network between our containers and allows Traefik to find our services and enable on the web.
 
@@ -124,15 +124,15 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     command:
-			# Enabling dashboard and Traefik API
+# Enabling dashboard and Traefik API
       - --api.insecure=true
       - --api.dashboard=true
-			# Setting the Traefik provider as docker in Swarm Mode
+# Setting the Traefik provider as docker in Swarm Mode
       - --providers.docker=true
       - --providers.docker.swarmMode=true
       - --providers.docker.network=traefik-proxy
       - --providers.docker.exposedByDefault=false
-			# Configuring http and https entrypoints as web and websecured
+# Configuring http and https entrypoints as web and websecured
       - "--providers.docker.defaultRule=Host(`example.com`)"
       - --entrypoints.web.address=:80
       - --entrypoints.websecured.address=:443
@@ -151,3 +151,4 @@ services:
         - 'traefik.enable=true'
         - 'traefik.http.routers.traefik.rule=Host(`traefik.localhost`)'
         - 'traefik.http.services.api.loadbalancer.server.port=8080'
+```
