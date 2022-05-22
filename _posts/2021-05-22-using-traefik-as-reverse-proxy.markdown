@@ -2,7 +2,6 @@
 layout: post
 title: "Using Traefik with docker swarm as reverse-proxy for multiple services"
 date: 2021-05-22 17:31:00 -0000
-categories: CATEGORY-1 CATEGORY-2
 ---
 # Using Traefik with docker swarm as reverse-proxy for multiple services
 
