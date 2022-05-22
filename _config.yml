@@ -21,11 +21,11 @@
 title: Eduardo Würch
 email: ewurch@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website.
+  Blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  Wurch
+url: "http://eduardo.wurch.com.br" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ewurch
+github_username:  ewurch
 
 # Build settings
 theme: minima
