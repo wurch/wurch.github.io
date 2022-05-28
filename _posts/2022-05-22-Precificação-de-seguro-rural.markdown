@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Impactos do Zoneamento Agrícola de Riscos Climáticos na Precificação do Seguro Agrícola"
-date: 2022-05-22
+date: 2022-05-22 12:30:00 -0000
 ---
 
 ### Desafios do mercado
