@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+Currently a software engineer, previously a data scientist, always an actuary.
+Based in the uncertainly beautiful city of Rotterdam, Netherlands.
+

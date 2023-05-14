@@ -1,135 +1,79 @@
 ---
 layout: post
-title: "Impactos do Zoneamento Agrícola de Riscos Climáticos na Precificação do Seguro Agrícola"
+title: "Impacts of the Climatic Risk Agricultural Zoning (ZARC) in the precification of agricultural insurance"
 date: 2022-05-22 12:30:00 -0000
 ---
+> This text is an adaptation of the script used to present my final theses as a Bachelor of Actuarial Sciences. You can find the original version in this [link](https://www.anspnet.org.br/wp-content/uploads/2022/12/E-book_2022_compressed.pdf) at page 136 (the original text was written in Portuguese). This work received maximum grade and was published by the National Academy of Insurance and Welfare ([ANSP](https://www.anspnet.org.br/)) in December of 2022.
 
-### Desafios do mercado
+### Introduction
+
+Given the efforts of the insurance market and the government's concern to understand how the climate impacts insurance modeling, this article evaluates the relationship between the rates practiced in agricultural insurance policies issued in Brazil and the risk indicator of the Climatic Risk Agricultural Zoning (ZARC), in order to comprehend if these elements are coherent between each other. Therefore, it is necessary to understand the concept of risk, the agricultural insurance product, and its operationalization difficulties, as well as the role of ZARC and its purpose of reducing the asymmetry of information and scarcity of data in this market and, finally, the comparison between rates, claims, and risk of policies issued from the Rural Insurance Premium Subsidy Program (PSR). 
+
+### Market Challenges
 ![image tooltip here](/assets/images/banner.jpg)
 
-A Precificação de seguro agrícola é um grande desafio para as seguradoras ao redor do mundo, e este artigo se propõe a responder a seguinte questão: os preços das apólices de seguro agrícola no Brasil são coerentes com os níveis de risco apontados pelo Zoneamento Agrícola de Risco Climático?
-Este estudo avalia a relação dos níveis de risco obtidos a partir do Zoneamento Agrícola de Risco Climático (ZARC), tanto nas taxas praticadas praticadas pelas seguradoras quanto na sinistralidade destes contratos de seguro.
+Agricultural insurance pricing is a major challenge for insurers around the world, and this article aims to answer the following question: Are agricultural insurance premiums in Brazil consistent with the risk levels indicated by the Climatic Risk Agricultural Zoning (ZARC)? This study evaluates the relationship between the risk levels obtained from ZARC, both in the rates practiced by insurers and in the loss ratios of these insurance contracts.
 
-Analisando em particular as apólices emitidas a partir do Programa de Subvenção ao Prêmio de Seguro Rural entre os anos de 2017 e 2021.
+In particular, it analyzes the policies issued under the Rural Insurance Premium Subsidy Program between the years 2017 and 2021
 
-### Riscos e Seguro Agrícola
+### Risks and Agricultural Insurance
 
 ![image tooltip here](/assets/images/risk_insurance.png)
 
-Ao se tratar de Risco, este é a peça central do seguro, no cotidiano entendemos risco como o perigo de que algo não desejado ocorra a alguém, em termos atuariais, é suprimido esse julgamento qualitativo do risco, ele se torna um modo de tratamento das consequências financeiras de um determinado evento. E No contexto do seguro, para ser segurável o risco deve possuir três características principais: 
-- Ser calculável; 
-- Coletivo; 
-- E representar uma quantia de capital;
+When it comes to risk, it is the central element of insurance. In everyday life, we understand risk as the danger that something unwanted may happen to someone. In actuarial terms, this qualitative judgment of risk is suppressed, and it becomes a way of dealing with the financial consequences of a particular event. In the context of insurance, for a risk to be insurable, it must possess three main characteristics:
+- It must be calculable;
+- It must be collective;
+- And it must represent a capital amount.
 
-O seguro pode ser definido formalmente como um acordo mútuo de compensação das consequências aleatórias de eventos regidos pelas leis da estatística; é considerado um elemento de equilíbrio social, pois mitiga proporcionalmente sobre toda a sociedade, o prejuízo, que ora incorreria sobre apenas um indivíduo. O seguro faz com que a comunidade se torne mais estável, porque diminui o impacto de eventos não esperados no planejamento financeiro dos agentes econômicos.
+Insurance can be formally defined as a mutual agreement to compensate for the random consequences of events governed by the laws of statistics. It is considered an element of social balance because it proportionally mitigates the loss that would otherwise fall on only one individual across society as a whole. Insurance makes the community more stable by reducing the impact of unexpected events on the financial planning of economic agents.
 
-O seguro agrícola então, é a proteção financeira específica para eventos decorrentes de fenômenos meteorológicos, as coberturas deste seguro protegem o segurado contra perdas por fenômenos climáticos, como secas, chuvas excessivas, granizos, geadas, etc. E uma característica marcante dessa modalidade é a alta complexidade atuarial, pois mesmo em um país tão agrário como o nosso, ele ainda possui uma baixíssima penetração, e um dos motivos para a dificuldade na comercialização é quebra algumas premissas de segurabilidade, o que dificulta precificação das seguradoras, e isso faz com que ele raramente seja oferecido exclusivamente pelo mercado, então mesmo em países que esse produto já é amplamente disseminado, como Estados Unidos e Espanha, o alto percentual de área segurada só foi atingido porque os órgãos públicos desenvolveram políticas de incentivo à comercialização.
+Agricultural insurance, then, is specific financial protection against events resulting from meteorological phenomena. The coverage of this insurance protects the insured against losses caused by weather-related phenomena such as droughts, excessive rainfall, hailstorms, frosts, etc. A striking characteristic of this type of insurance is its high actuarial complexity. Even in a country as agrarian as ours, it still has a very low penetration rate. One of the reasons for the difficulty in marketing is that it breaks some insurability assumptions, which hampers the pricing by insurers. Therefore, it is rarely offered exclusively by the market. Even in countries where this product is already widely disseminated, such as the United States and Spain, the high percentage of insured area was only achieved because public agencies developed policies to encourage its commercialization.
 
-### Seguro agrícola no Brasil e políticas públicas
+### Agricultural Insurance in Brazil and Public Policies
 ![image tooltip here](/assets/images/seguro_brasil.png)
-No Brasil, a agricultura participou de 26% do PIB e gerou 9 milhões de empregos diretos, isso evidencia a importância do seguro na política rural, e atualmente, está em vigor o Programa de Subvenção ao Prêmio de Seguro Rural, o PSR, ele foi apresentado em 2002 e transformado em lei em dezembro de 2003, e é um apoio aos produtores rurais que querem proteger suas lavouras contra riscos climáticos. O percentual de subvenção varia de acordo com as prioridades da política agrícola naquele ano, e representa em torno de 30% a 35% do prêmio. 
 
-Aliado ao PSR e outras políticas públicas, como o PROAGRO, existe também o Zoneamento Agrícola de Risco Climático, é um estudo agrometeorológico operacionalizado por uma equipe de engenheiros agrônomos, estatísticos e meteorologistas, e tem o objetivo de definir o que plantar, onde plantar e quando plantar. Ou seja, com o cruzamento de dados de localização; data de início do plantio; textura do solo e cultura ele classifica esse empreendimento em uma faixa de risco de 20%, 30% ou 40%. Esses percentuais representam o risco de perda da produção ao longo do ciclo da cultura pela ocorrência de algum fenômeno climático. Além do PSR, o PROAGRO e o PROAGRO Mais também se apoiam neste indicador de risco como requisito para a tomada de crédito
+In Brazil, agriculture contributed 26% to the GDP and generated 9 million direct jobs. This highlights the importance of insurance in rural policy. Currently, the Rural Insurance Premium Subsidy Program (PSR) is in effect. It was introduced in 2002 and became law in December 2003. It provides support to farmers who want to protect their crops against climatic risks. The subsidy percentage varies according to the priorities of agricultural policy in a given year and represents around 30% to 35% of the premium.
+
+In conjunction with the PSR and other public policies such as PROAGRO, there is also the Agroclimatic Risk Zoning. It is an agrometeorological study carried out by a team of agricultural engineers, statisticians, and meteorologists. Its objective is to define what, where, and when to plant. By cross-referencing location data, planting start dates, soil texture, and crop information, it classifies the risk level of the undertaking into a range of 20%, 30%, or 40%. These percentages represent the risk of production loss throughout the crop cycle due to the occurrence of climatic phenomena. In addition to the PSR, PROAGRO and PROAGRO Mais also rely on this risk indicator as a requirement for accessing credit.
 
 
-### Análise dos dados
-Todos os dados deste trabalho foram coletados a partir de fontes públicas, e o cruzamento entre eles permitiu que esta análise fosse realizada. Os dados de apólices de seguro foram coletados a partir da base divulgada pelo SISSER, que é o sistema que administra as subvenções do PSR e os dados de textura do solo foram obtidos no Mapa de Solos do Brasil, um relatório produzido pela EMBRAPA e entao foi possivel obter o nível de risco das apólices a partir do ZARC.
+### Analysis of Brazilian Insurance Data
+All the data in this study were collected from public sources, and the cross-referencing between them allowed for this analysis to be conducted. The insurance policy data was collected from the database disclosed by SISSER, which is the system that manages PSR subsidies, and the soil texture data was obtained from the Soil Map of Brazil, a report produced by EMBRAPA. This allowed us to determine the risk level of the policies based on ZARC.
 
 ![image tooltip here](/assets/images/fonte_dados.png)
 
-Ao final de todos os cruzamentos e limpeza dos dados chegamos em 64 mil exemplares, das culturas de soja, milho 2ª safra e trigo. A população total dessas três culturas é por volta de 328 mil apólices na base de dados original, portanto a amostra obtida excede largamente a amostra mínima necessária para uma análise com intervalo de confiança de 99% e margem de erro de 1%. Ainda foi extraído mais um subconjunto desta amostra, contendo apenas as apólices de milho 2ª safra localizadas no Paraná, o objetivo deste grupo, que ao longo dos gráficos vai estar intulado de “Grupo 2”, é isolar variáveis que poderiam enviesar a precificação, como cultura, localização do plantio e tipo de solo, e nesse caso temos praticamente apenas a data como determinante do nivel de risco.
+After all the data cross-referencing and cleaning, we ended up with a sample of 64,000 policies for the crops of soybean, second-season corn, and wheat. The total population of these three crops is around 328,000 policies in the original database, so the obtained sample greatly exceeds the minimum sample size required for an analysis with a 99% confidence level and a 1% margin of error. Additionally, a subset of this sample was extracted, containing only second-season corn policies located in Paraná. The purpose of this subset, referred to as 'Group 2' throughout the graphs, is to isolate variables that could bias the pricing, such as crop type, planting location, and soil type. In this case, the determining factor for the risk level is primarily the date.
 
 ![image tooltip here](/assets/images/localizacao_apolices.png)
 
-Em relação a sinistralidade destes grupos, ao avaliar as apólices encerradas até junho de 2020, quando agrupamos por faixa de risco, podemos observar que no Grupo 1, a sinistralidade reflete o respectivo nível de risco esperado dos contratos, e apesar da magnitude da sinistralidade variar ano a ano, a consistência do indicador é mantida. Já para o recorte que é o Grupo 2, os dados não mantêm a consistência ao longo de todos os anos, e apesar das apólices emitidas em 2019 estarem com a ordenação por risco conforme o esperado, o comportamento errático da sinistralidade nas apólices de 2018 e 2017 pode indicar a ocorrência de algum evento climático agudo que afetou esses contratos.
+Regarding the loss ratio of these groups, when evaluating the closed policies until June 2020 and grouping them by risk level, we can observe that in Group 1, the loss ratio reflects the respective expected risk level of the contracts. Despite the magnitude of the loss ratio varying from year to year, the consistency of the indicator is maintained. However, for the subset, which is Group 2, the data does not maintain consistency throughout all the years. Although the policies issued in 2019 are ordered by risk as expected, the erratic behavior of the loss ratio in the policies from 2018 and 2017 may indicate the occurrence of some acute climatic event that affected these contracts.
 
 ![image tooltip here](/assets/images/sinistralidade_risco_ano_milho_pr.png)
 
-E conforme uma notícia veĩculada pelo jornal gazeta do povo em 2018, naquele ano realmente houve uma quebra de safra por conta da estiagem, assim como em 2017 a safra dessa cultura registrou rendimento acima do esperado.
+According to a news article published by Gazeta do Povo in 2018, there was indeed a crop failure that year due to drought, and in 2017, the crop yield for this particular crop exceeded expectations.
 
-É importante também notar como a magnitude das sinistralidades varia de modo conjunto ano a ano em ambos os grupos. O Grupo 1, que contém alta diversificação, possui aumento e diminuição de sinistralidade nos mesmos anos que o Grupo 2, que é o grupo altamente concentrado. Esse comportamento exemplifica o caráter sistêmico dos riscos rurais.
+It is also important to note how the magnitude of the loss ratios varies collectively from year to year in both groups. Group 1, which has high diversification, experiences increases and decreases in the loss ratio in the same years as Group 2, which is the highly concentrated group. This behavior exemplifies the systemic nature of agricultural risks.
 
-Agora ao olhar diretamente o objeto deste estudo que, são as taxas por nível de risco , os gráficos demonstram que para o Grupo 1, apesar das medianas de cada um destes grupos estar escalonada, a distância interquartil  e os mínimos e máximos estão na ordem inversa.
+Now, focusing directly on the object of this study, which is the rates by risk level, the graphs demonstrate that for Group 1, although the medians of each group are staggered, the interquartile range and the minimum and maximum values are in the reverse order.
 
 ![image tooltip here](/assets/images/boxplot_taxas_grupos.png)
 
-Para o Grupo 2 vale notar algumas distorções mais abruptas: Além da mediana do grupo com 40% de risco ser inferior a do grupo de 20%, os maximos e minimos também são respectivamente menores. 
+For Group 2, there are some more abrupt distortions worth noting: in addition to the median of the 40% risk group being lower than that of the 20% group, the maximum and minimum values are also respectively lower.
 
-Dado esse maior descolamento aparente entre as taxas de 20% e 40% do Grupo 2, foi realizado um teste de hipóteses para validar se há significância estatística do comportamento observado, as hipóteses formuladas foram:
+Given this apparent greater divergence between the rates of 20% and 40% in Group 2, a hypothesis test was conducted to validate the statistical significance of the observed behavior. The formulated hypotheses were:"
 
-- $$H_0$$: Em média, a classificação de riscos do ZARC não afeta a taxa das apólices;
-- $$H_1$$: A distribuição X (20% de risco) é maior que a distribuição Y (40% de risco).
+- $$H_0$$: On average, the ZARC risk classification does not affect the policy rates;
+- $$H_1$$: Distribution X (20% risk) is higher than distribution Y (40% risk).
 
-O resultado obtido é um $$\textit{p-value}<0.001$$, portanto rejeitamos a hipótese nula e podemos assumir que, em média, as taxas do Grupo 2 para apólices com nível de risco de 40% são menores que as taxas das apólices com nível de risco de 20%. Isso demonstra um descasamento existente entre a precificação das seguradoras e o nível de risco indicado pelo Zoneamento Agrícola de Riscos Climáticos.
+The obtained result is a $$\textit{p-value}<0.001$$, therefore we reject the null hypothesis and can assume that, on average, the rates of Group 2 for policies with a 40% risk level are lower than the rates of policies with a 20% risk level. This demonstrates a mismatch between the pricing of insurance companies and the risk level indicated by the Agricultural Zoning of Climatic Risks.
 
-### Conclusão
-Portanto, as constatações obtidas na análise dos dados nos levam à conclusão de que, apesar dos grandes esforços empreendidos para a realização do ZARC, e demonstrado poder de discriminação entre os graus de sinistralidade, o nível de risco indicado nao possui correlação com as taxas praticadas em apólices do seguro rural. Durante os três anos analisados, o indicador obteve consistência com a sinistralidade das apólices observadas, em que, quanto maior o risco apurado, maior a sinistralidade do conjunto de contratos. Essa mesma tendência, no entanto, não se repetiu ao compararmos as taxas cobradas pelos contratos, nos levando a conclusão que o mercado segurador brasileiro não utiliza os insumos tecnológicos do Zoneamento Agrícola de Risco Climático para precificar com mais exatidão e mais personalização as apólices. 
+### Conclusions
+Therefore, the findings obtained from the data analysis lead us to the conclusion that, despite the significant efforts made in implementing the ZARC and its demonstrated ability to discriminate between levels of loss, the indicated risk level does not correlate with the rates practiced in agricultural insurance policies. Over the three years analyzed, the indicator showed consistency with the observed loss experience, where higher assessed risk corresponded to higher loss ratios across the contract portfolio. However, this same trend did not hold when comparing the rates charged by the contracts, leading us to the conclusion that the Brazilian insurance market does not utilize the technological inputs of the Agricultural Zoning of Climatic Risks to price policies more accurately and with more customization. 
 
-Além disso, o percentual de subvenção poderia ser vinculado ao nível de risco indicado para determinado plantio, incentivando os empreendimentos agropecuários mais seguros e tornando o mercado de seguro agrícola mais sustentável a longo prazo.
+Furthermore, the subsidy percentage could be linked to the indicated risk level for a specific crop, encouraging safer agricultural ventures and making the agricultural insurance market more sustainable in the long term.
 
-Há anos, o governo brasileiro e os governos estaduais tentam estabelecer o seguro como o principal instrumento de proteção da política rural, mas como vimos pelo percentual de adoção deste produto, ainda não foi obtido o sucesso desejado. Agora, apesar disso, as duas iniciativas abordadas neste trabalho têm se mostrado exitosas no que se propõe a fazer e também promissoras:
-- O **PSR** (que é o programa de subvenção ao prêmio de seguro rural,  este vigente em todo território nacional, mas vale também para os seus análogos estaduais) tem aumentado o seu território sob cobertura, alcançando cada vez mais produtores.
-- E também o **ZARC** que é o Zoneamento Agrícola de Risco Climático.Que como demonstrado anteriormente, cumpre o que se propõe a fazer e consegue determinar qual é o período mais adequado para a realização do plantio. 
+For years, the Brazilian government and state governments have been trying to establish insurance as the main instrument for rural policy protection. However, as we have seen from the adoption rate of this product, the desired success has not yet been achieved. Nevertheless, the two initiatives addressed in this study have proven to be successful in their intended purposes and hold promise:
+- The **PSR** (Program for Subsidizing Agricultural Insurance Premiums), which is in effect nationwide and also applies to state-level counterparts, has been expanding its coverage area, reaching more and more producers.
+- And also the **ZARC** (Agricultural Zoning for Climatic Risk), which, as demonstrated earlier, fulfills its intended purpose and determines the most suitable planting periods. 
 
-Países como EUA e Espanha demoraram anos para desenvolver seus modelos de seguro agrícola, e no Brasil não haveria porque ser diferente.
-
-
-### Referências
-
-AHSAN, S. M.; ALI, A. A. G.; KURIAN, N. J. Toward a Theory of Agricultural Insurance. American Journal of Agricultural Economics, v. 64 n. 3, p. 520-529, 1982.
-
-ALLISON, N. L. et al. The Copenhagen Diagnosis: Updating the world on the Latest Climate Science, The University of New South Wales Climate Change Research Centre (CCRC), Sidney: The Copenhagen Diagnosis, 2009. Disponível em: https://oceanrep.geomar.de/id/ eprint/11839/2/Copenhagen_Diagnosis_LOW.pdf. Acesso em: 10 abr. 2022.
-
-ASSAD, E. D. et al. Zoneamento agrícola de riscos climáticos do Brasil: base teórica, pesquisa e desenvolvimento. Informe Agropecuário, v. 29, n. 246, p. 47-60, 2008.
-BRASIL. Lei n. 10.823, de 19 de dezembro de 2003. Dispõe sobre a subvenção econômica ao prêmio do Seguro Rural e dá outras providências. Brasília: Presidência da República, 2003. Disponível em: http://www.planalto.gov.br/ccivil_03/LEIS/2003/L10.823.htm. Acesso em: 10 abr. 2022.
-
-BUAINAIN, A. M.; VIEIRA, P. A. Seguro Agrícola no Brasil: desafios e potencialidades. Revista Brasileira de Risco e Seguro, v. 7, n. 13, p. 39-68, 2011.
-
-CHARPENTIER, A. Insurability of Climate Risks. The Geneva Papers on Risk and Insurance: Issues and Practice, v. 33, n. 1, p. 91-109, 2008.
-
-CLIMATE FIELDVIEW. O agronegócio no Brasil: onde chegamos e o que podemos esperar? 2021. Disponível em: https://blog.climatefieldview.com.br/o-agronegocio-brasileiro-onde-chegamos-e-o-que-podemosesperar#:~:text=De%20acordo%20com%20c%C3% A1lculos%20do,%C3%A0%20%C3%A1rea%20ocupada%20pelo%20agribusiness. Acesso em: 10 abr. 2022.
-
-COLLINS, D. et al. Determining the Impact of Climate Change on Insurance Risk and the Global Community. Climate Index Working Group, 2012. Disponível em: https://www.soa. org/resources/research-reports/2012/research-2012-climate-change-reports. Acesso em: 10 abr. 2022.
-
-EMBRAPA INFORMÁTICA AGROPECUÁRIA. ZARC: Zoneamento Agrícola de Risco Climático: mapeando riscos e reduzindo perdas, desde 1996. Brasília: EMBRAPA, 2022. Disponível em: https://www.embrapa.br/busca-de-publicacoes/-/publicacao/1132134/zarc-zoneamento-agricola-de-risco-climatico-mapeando-riscos-e-reduzindo-perdas-desde-1996. Acesso em: 10 abr. 2022.
-
-EWOLD, F. Insurance and risk. In: BURCHELL, G.; GORDON, C.; MILLER, P. The Foucault effect: studies in governmentality. Chicago: University Chicago Press, 1991. p. 197-210.
-
-FONSECA, J. J. S. Metodologia da pesquisa científica. Fortaleza: UEC, 2002. 
-
-GERSTMAN, B. B. StatPrimer. San Jose: San Jose University, 2016. Disponível em: https://www.sjsu.edu/faculty/gerstman/StatPrimer. Acesso em: 10 abr. 2022.
-
-GIL, A. C. Como elaborar projetos de pesquisa. 4. ed. São Paulo: Atlas, 2007.
-
-HAZELL, P. B. R. The Appropriate Role of Agricultural Insurance in Developing Countries. Journal of International Development, v. 4, n. 6, p. 567-581, 1992.
-
-MINISTÉRIO DA AGRICULTURA, PECUÁRIA E PESCA (MAPA). Programa de Subvenção ao Prêmio do Seguro Rural (PSR). Brasília: MAPA, 2019. Disponível em: http://www.agricultura.gov.br/acesso-a-informacao/acoes-e-programas/cartas-de-servico/politica-agricola/programa-de-subvencao-ao-premio-do-seguro-rural-psr. Acesso em: 10 abr. 2022.
-
-
-MINISTÉRIO DA AGRICULTURA, PECUÁRIA E PESCA (MAPA). Guia de Seguros Rurais 2021. Brasília: MAPA, 2019. Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/riscos-seguro/seguro-rural/publicacoes-seguro-rural/guia-dos-seguros-rurais#:~:text=A%20cobertura%20do%20seguro%20se,at%C3%A9%20a%20colheita%20da%20lavoura.&text=O%20objeto%20do%20seguro%20define,)%20das%20cobe. Acesso em: 10 abr. 2022.
-
-MINITTI, A. F. Relatório de avaliação dos impactos do Zoneamento Agrícola de Risco Climático (ZARC). Brasília: EMBRAPA, 2020. Disponível em: https://www.embrapa.br/ busca-de-publicacoes/-/publicacao/1127938/relatorio-de-avaliacao-dos-impactos-do-zoneamento-agricola-de-risco-climatico-zarc. Acesso em: 10 abr. 2022.
-
-NACHAR, N. The Mann‐Whitney U: A Test for Assessing Whether Two Independent Samples Come from the Same Distribution. Tutorials in Quantitative Methods for Psychology, v. 4, n. 1, p. 13-20, 2008.
-
-O PRESENTE RURAL. Entenda como o Brasil se tornou o maior produtor de soja do mundo. 2021. Disponível em: https://opresenterural.com.br/entenda-como-o-brasil-se-tornou-o-maior-produtor-de-soja-do-mundo/. Acesso em: 10 abr. 2022.
-
-OZAKI, V. A. O Papel do Seguro na Gestão do Risco Agrícola e os Empecilhos para o seu Desenvolvimento. Revista Brasileira de Rico e Seguro, v. 2, n. 4, p. 75-92, 2007.
-
-OZAKI, V. A. Qual o Custo Governamental do Seguro Agrícola? Revista de Economia e Sociologia Rural, v. 51, n. 1, p. 123-136, 2013.
-
-QUALTRICS. Slovin’s Formula: What is it and When do I use it. StatisticsHowTo.com, [n.d.]. Disponível em: https://www.statisticshowto.com/probability-and-statistics/how-to-use-slovins-formula/. Acesso em: 10 abr. 2022.
-
-PORTH, L.; TAN, K. S. Agricultural Insurance, More Room to Grow? The Actuary, v. 12, n. 2, p. 34-40, 2015.
-
-RAMOS, R. C. O Seguro Rural no Brasil: Origem, evolução e proposições para aperfeiçoamento. Informações Econômicas, v. 39, n. 3, p. 5-16, 2009.
-
-REVISTA APÓLICE. Apenas 15% da Área Plantada do Brasil Possui Seguro Rural. Apólice. 2017. Disponível em: https://www.revistaapolice.com.br/2017/05/apenas-15-da-area-plantada-do-brasil-possui-seguro-rural. Acesso em: 10 abr. 2022.
-
-SCHLENKER, W.; ROBERTS, M. J. Nonlinear temperature effects indicate severe damages to US crop yields under climate change. Proceedings of the National Academy of Sciences, v. 106, n. 37, p. 15594-15598, 2009.
-
-SUPERINTENDÊNCIA DE SEGUROS PRIVADOS (SUSEP). Resolução CNSP n. 339, de 2016. Dispõe sobre o Seguro Rural e o Fundo de Estabilidade do Seguro Rural – FESR, de sua administração e controle por seu gestor, e dá outras providências. Brasília: SUSEP, 2016. Disponível em: http://www2.susep.gov.br/bibliotecaweb/docOriginal.aspx? tipo=1&codigo=37980. Acesso em: 19 out. 2019.
-WORLD BANK. Agriculture, forestry, and fishing, value added (% of GDP). 2018. Disponível em: https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS. Acesso em: 19 out. 2019.
-
-WUEBBLES, D. et al. Our globally changing climate. Lincoln: University of Nebraska, 2016.
-
+Countries like the United States and Spain took years to develop their agricultural insurance models, and there is no reason for Brazil to be any different.
