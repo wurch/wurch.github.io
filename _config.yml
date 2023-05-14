@@ -23,7 +23,7 @@ email: ewurch@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://eduardo.wurch.com.br" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://ewurch.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ewurch
 github_username:  ewurch
 
