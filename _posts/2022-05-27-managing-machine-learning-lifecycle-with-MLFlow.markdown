@@ -1,4 +1,4 @@
-d---
+---
 layout: post
 title: "Managing machine learning lifecycle with MLFlow - Script"
 date: 2022-05-27 12:30:00 -0000
