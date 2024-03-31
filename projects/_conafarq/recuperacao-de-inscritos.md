@@ -10,35 +10,37 @@ A recuperação dos inscritos que foram aprovados é uma funcionalidade importan
 
 Por solicitação da gestão operacional do Conafarq, será adicionado um botão para resetar a inscrição, onde o usuário que começou o processo terá que preencher novamente suas informações demográficas, formulário e portfólio.
 
-## Objetivos
-1. **Notificação para aviso de novos inscritos**: 
-    1. Quando um novo inscrito completar o registro os administradores irão receber um email para revisar a candidatura..
-2. **Integração do formulário de inscrição ao Site**: 
-    2. Replicação do atual formulário no Google Forms em um formulário integrado ao site. 
-    3. Criação do Status “Desclassificado”. 
-    4. Criação de página para avaliação do perfil e aprovação/reprovação da candidatura
-3. **Envio de link de pagamento**: 
-    5. Quando o novo inscrito for aprovado, dispara automaticamente link de pagamento para conclusão da inscrição.
-    6. Envio de email ao inscrito e aos ADM’s se a inscrição não for paga em uma semana.
-    7. Quando a inscrição for paga, enviar email de confirmação aos ADM’s com o checklist de novos inscritos
+## Objetivos e etapas:
+1. **Recuperação dos Inscritos aprovados**: 
+    1. Adicionar um monitoramento periódico de inscrições aprovadas e não pagas.
+    1. Criar um template de email para ser enviado ao candidato.
+    1. Enviar emails conforme tempo predeterminado (e.g. 3 dias, 1 semana e 2 semanas).
+1. **Reset da inscrição**: 
+    1. Permite que o administrador resete a inscrição do possível membro, fazendo com que ele preencha novamente o perfil demográfico, formulário e portfólio.
+1. **Criação de um perfil de visualização para funcionários externos**:
+    1. Permitir que um funcionário tenha um perfil no site apenas para visualização.
+
 
 
 ## Sugestões para melhoria
-4. **Criação de um “Portfólio Conafarq”:** 
-    8. Página com fotos dos membros.
-    9. Categorização das fotos por especialidade (Interiores, Exteriores, Drone, etc), utilizando isso como filtro para o portfólio.
-    10. Criação de Tags para as fotos e adição de filtro por tag ao portfólio.
-5. **Rotação da foto principal do site.**
-6. **Adicionar campo para membros fazerem upload de documentos solicitados pela associação. **
-7. **Inclusão de vídeos de onboarding (vídeos explicativos) no registro e na área de membros.**
+1. **Adicionar tag de "Diretor", "Representante regional" , etc.**
+    ![visual representation of the future](/assets/images/image1.png)
+1. **Categorização das fotos por especialidade;**
+    1. Categorização das fotos por especialidade (Interiores, Exteriores, Drone, etc), utilizando isso como filtro para o portfólio.
+1. **Criação de um “Portfólio Conafarq”:** 
+    1. Página com fotos dos membros.
+    1. Criação de Tags para as fotos e adição de filtro por tag ao portfólio.
+1. **Rotação da foto principal do site.**
+1. **Adicionar campo para membros fazerem upload de documentos solicitados pela associação.**
+1. **Inclusão de vídeos de onboarding (vídeos explicativos) no registro e na área de membros.**
 
 
 ## Orçamento
 
-||Demanda|Horas de trabalho|Valor|Prazo de entrega|
-|---- |---- |---- |---- |
-|1|Notificação para aviso de novos inscritos|8hrs|R$ 0,00|24/12/2023|
-|2|Integração do formulário de inscrição ao Site|24hrs|R$ 1.440,00|24/12/2023|
-|3|Envio de link de pagamento|12hrs|R$ 720,00|31/01/2023
+||Demanda|Horas de trabalho|Valor|
+|---- |---- |---- |----
+|1|Recuperação dos Inscritos aprovados|8hrs|R$ 480,00|
+|2|Reset da Inscricao|4hrs|R$ 240,00|
+|3|Criação de um perfil de visualização para funcionários externos|12hrs|R$ 720,00|
 
-#### Total: R$2.160,00
+#### Total: R$810,00
