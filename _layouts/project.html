@@ -1,0 +1,17 @@
+---
+layout: page
+---
+{{ content }}
+{% for collection in site.collections %}
+  {% if collection.label == page.collection %}
+    <ul>
+      {% for item in site[collection.label] %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a> - 
+          <span class="badge">{{ item.status }}</span>
+          {{ item.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
