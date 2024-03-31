@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -21,13 +21,18 @@
 title: Eduardo Würch
 email: ewurch@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Made with <3 in Rotterdam, South-Holland. @ 2023
+  Made with <3 in Rotterdam, South-Holland. @ 2024
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ewurch.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pereraw_
-github_username:  ewurch
+github_username: ewurch
 
-
+# Collections settings
+collections_dir: projects
+collections:
+  conafarq:
+    output: true
+  
 # Build settings
 remote_theme: jekyll/minima
 
@@ -36,21 +41,23 @@ plugins:
   - jekyll-remote-theme
 
 google_analytics: UA-NNNNNNNN-N
-minima:
 
+minima:
   skin: dark
 
   social_links:
-    - { platform: github,  user_url: "https://github.com/ewurch" }
+    - { platform: github, user_url: "https://github.com/ewurch" }
     - { platform: twitter, user_url: "https://twitter.com/pereraw_" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/eduardowurch/" }
+    - {
+        platform: linkedin,
+        user_url: "https://www.linkedin.com/in/eduardowurch/",
+      }
 
   google_analytics: G-FFXY8WKDGG
 
   header_pages:
     - about.md
     - index.md
- 
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

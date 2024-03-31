@@ -16,4 +16,3 @@ gem "json"
 gem "jekyll"
 gem "webrick"
 # If you have any plugins, put them here!
-
